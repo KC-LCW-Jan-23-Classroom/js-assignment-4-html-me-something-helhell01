@@ -49,7 +49,7 @@ describe ("Grading Tests: ", function () {
 
    it("HTML contains correct number of sections", function() {
       let childrenElements = container.body.children;
-
+      console.log(JSON.stringify(container.body[0]))
       expect(childrenElements.length).toBeGreaterThanOrEqual(3);
       expect(childrenElements.length).toBeLessThanOrEqual(10);
    })
